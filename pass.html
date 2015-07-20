@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>About me</title>
+    <script type="text/javascript">
+        function inputpassword(){
+            pass = window.prompt("passを入力してください","");
+            var path1 = pass.substr(0,6);
+            var path2 = pass.substr(6,5);
+            var filename = pass.substr(11,3);
+            var url = path1 + "/" + path2 + "/" + filename + ".zip";
+            location.href=url;
+        }
+    </script>
+    <style type="text/css">
+        /*ここにCSSを書きます！*/
+    
+        body {
+            background-color: #57a6e1;
+        }
+
+        div#waku {
+            width: 600px;
+            margin: 50px auto 50px auto;
+            padding: 40px;
+            text-align: center;
+            border: #000000 5px solid;
+            background-color: #ffffff;
+        }
+
+         {
+            font-size: 40px;
+        }
+
+        {
+            font-size: 18px;
+        }
+
+        span {
+            font-size: 22px;
+            font-weight: bold;
+        }
+    </style>
+    <div id="waku">
+
+        <h1>ヒカリノカナタヘ裏表のpass</h1>
+        
+
+
+        <p><a href="#" onclick="inputpassword();">dlいくぜー</a></p>
+    
+
+ </div>
+
+</body>
+</html>
